@@ -1,0 +1,298 @@
+{
+  "type": "question",
+  "titre": "Chirurgie mammaire conservatrice",
+  "choix": {
+    "0": {
+      "type": "question",
+      "titre": "pT3-T4",
+      "choix": {
+        "0": {
+          "type": "resultat",
+          "donnees": {
+            "Radiothérapie du sein (hypofractionnée modérée)": "0",
+            "Boost / surimpression lit opératoire": "0",
+            "Radiothérapie de la paroi thoracique": "1",
+            "RT ganglionnaire : CMI + sus/sous-clav. + axillaire inf. (niv.1à4+IP)": "0",
+            "RT ganglionnaire option : CMI + niveaux 3-4 (tumeur centrale/interne)": "0",
+            "RT pariétale et ganglionnaire complète": "0",
+            "Mastectomie totale simple (± RMI)": "0",
+            "Reprise chirurgicale conservatrice avec marges saines": "0",
+            "Mastectomie (reprise conservatrice impossible)": "0",
+            "Pas d'irradiation ganglionnaire": "0",
+            "Pas de RT de paroi": "0",
+            "Abstention ganglion sentinelle": "Non renseigné",
+            "Ganglion sentinelle (procédure)": "Non renseigné",
+            "TAD": "Non renseigné",
+            "Curage axillaire": "Non renseigné",
+            "Stop (pas de curage complémentaire)": "Non renseigné",
+            "RT loco-régionale": "Non renseigné",
+            "Abstention de chimiothérapie": "Non renseigné",
+            "Chimiothérapie": "Non renseigné",
+            "Chimiothérapie + anti-HER2 (trastuzumab ± pertuzumab)": "Non renseigné",
+            "Hormonothérapie seule": "Non renseigné",
+            "Hormonothérapie + chimiothérapie (option)": "Non renseigné",
+            "Hormonothérapie + signature génomique (algorithme dédié)": "Non renseigné",
+            "Olaparib si indiqué (gBRCAm)": "Non renseigné",
+            "nhibiteur CDK4/6 si indiqué": "Non renseigné",
+            "RCP (discussion au cas par cas)": "Non renseigné"
+          },
+          "infos_science": {}
+        },
+        "1": {
+          "type": "resultat",
+          "donnees": {
+            "Radiothérapie du sein (hypofractionnée modérée)": "0",
+            "Boost / surimpression lit opératoire": "0",
+            "Radiothérapie de la paroi thoracique": "1",
+            "RT ganglionnaire : CMI + sus/sous-clav. + axillaire inf. (niv.1à4+IP)": "0",
+            "RT ganglionnaire option : CMI + niveaux 3-4 (tumeur centrale/interne)": "0",
+            "RT pariétale et ganglionnaire complète": "0",
+            "Mastectomie totale simple (± RMI)": "0",
+            "Reprise chirurgicale conservatrice avec marges saines": "0",
+            "Mastectomie (reprise conservatrice impossible)": "0",
+            "Pas d'irradiation ganglionnaire": "0",
+            "Pas de RT de paroi": "0",
+            "Abstention ganglion sentinelle": "Non renseigné",
+            "Ganglion sentinelle (procédure)": "Non renseigné",
+            "TAD": "Non renseigné",
+            "Curage axillaire": "Non renseigné",
+            "Stop (pas de curage complémentaire)": "Non renseigné",
+            "RT loco-régionale": "Non renseigné",
+            "Abstention de chimiothérapie": "Non renseigné",
+            "Chimiothérapie": "Non renseigné",
+            "Chimiothérapie + anti-HER2 (trastuzumab ± pertuzumab)": "Non renseigné",
+            "Hormonothérapie seule": "Non renseigné",
+            "Hormonothérapie + chimiothérapie (option)": "Non renseigné",
+            "Hormonothérapie + signature génomique (algorithme dédié)": "Non renseigné",
+            "Olaparib si indiqué (gBRCAm)": "Non renseigné",
+            "nhibiteur CDK4/6 si indiqué": "Non renseigné",
+            "RCP (discussion au cas par cas)": "Non renseigné"
+          },
+          "infos_science": {}
+        }
+      }
+    },
+    "1": {
+      "type": "question",
+      "titre": "Marges saines",
+      "choix": {
+        "0": {
+          "type": "question",
+          "titre": "Reprise chirurgicale conservatrice avec marges saines possible",
+          "choix": {
+            "0": {
+              "type": "question",
+              "titre": "Atteinte unifocale d'une berge par composante in situ (sans MCC résiduelles)",
+              "choix": {
+                "0": {
+                  "type": "resultat",
+                  "donnees": {
+                    "Radiothérapie du sein (hypofractionnée modérée)": "0",
+                    "Boost / surimpression lit opératoire": "0",
+                    "Radiothérapie de la paroi thoracique": "0",
+                    "RT ganglionnaire : CMI + sus/sous-clav. + axillaire inf. (niv.1à4+IP)": "0",
+                    "RT ganglionnaire option : CMI + niveaux 3-4 (tumeur centrale/interne)": "0",
+                    "RT pariétale et ganglionnaire complète": "0",
+                    "Mastectomie totale simple (± RMI)": "1",
+                    "Reprise chirurgicale conservatrice avec marges saines": "0",
+                    "Mastectomie (reprise conservatrice impossible)": "0",
+                    "Pas d'irradiation ganglionnaire": "0",
+                    "Pas de RT de paroi": "0",
+                    "Abstention ganglion sentinelle": "Non renseigné",
+                    "Ganglion sentinelle (procédure)": "Non renseigné",
+                    "TAD": "Non renseigné",
+                    "Curage axillaire": "Non renseigné",
+                    "Stop (pas de curage complémentaire)": "Non renseigné",
+                    "RT loco-régionale": "Non renseigné",
+                    "Abstention de chimiothérapie": "Non renseigné",
+                    "Chimiothérapie": "Non renseigné",
+                    "Chimiothérapie + anti-HER2 (trastuzumab ± pertuzumab)": "Non renseigné",
+                    "Hormonothérapie seule": "Non renseigné",
+                    "Hormonothérapie + chimiothérapie (option)": "Non renseigné",
+                    "Hormonothérapie + signature génomique (algorithme dédié)": "Non renseigné",
+                    "Olaparib si indiqué (gBRCAm)": "Non renseigné",
+                    "nhibiteur CDK4/6 si indiqué": "Non renseigné",
+                    "RCP (discussion au cas par cas)": "Non renseigné"
+                  },
+                  "infos_science": {}
+                },
+                "1": {
+                  "type": "question",
+                  "titre": "pT2",
+                  "choix": {
+                    "0": {
+                      "type": "resultat",
+                      "donnees": {
+                        "Radiothérapie du sein (hypofractionnée modérée)": "0",
+                        "Boost / surimpression lit opératoire": "0",
+                        "Radiothérapie de la paroi thoracique": "0",
+                        "RT ganglionnaire : CMI + sus/sous-clav. + axillaire inf. (niv.1à4+IP)": "0",
+                        "RT ganglionnaire option : CMI + niveaux 3-4 (tumeur centrale/interne)": "0",
+                        "RT pariétale et ganglionnaire complète": "0",
+                        "Mastectomie totale simple (± RMI)": "0",
+                        "Reprise chirurgicale conservatrice avec marges saines": "0",
+                        "Mastectomie (reprise conservatrice impossible)": "1",
+                        "Pas d'irradiation ganglionnaire": "0",
+                        "Pas de RT de paroi": "0",
+                        "Abstention ganglion sentinelle": "Non renseigné",
+                        "Ganglion sentinelle (procédure)": "Non renseigné",
+                        "TAD": "Non renseigné",
+                        "Curage axillaire": "Non renseigné",
+                        "Stop (pas de curage complémentaire)": "Non renseigné",
+                        "RT loco-régionale": "Non renseigné",
+                        "Abstention de chimiothérapie": "Non renseigné",
+                        "Chimiothérapie": "Non renseigné",
+                        "Chimiothérapie + anti-HER2 (trastuzumab ± pertuzumab)": "Non renseigné",
+                        "Hormonothérapie seule": "Non renseigné",
+                        "Hormonothérapie + chimiothérapie (option)": "Non renseigné",
+                        "Hormonothérapie + signature génomique (algorithme dédié)": "Non renseigné",
+                        "Olaparib si indiqué (gBRCAm)": "Non renseigné",
+                        "nhibiteur CDK4/6 si indiqué": "Non renseigné",
+                        "RCP (discussion au cas par cas)": "Non renseigné"
+                      },
+                      "infos_science": {}
+                    },
+                    "1": {
+                      "type": "resultat",
+                      "donnees": {
+                        "Radiothérapie du sein (hypofractionnée modérée)": "0",
+                        "Boost / surimpression lit opératoire": "0",
+                        "Radiothérapie de la paroi thoracique": "0",
+                        "RT ganglionnaire : CMI + sus/sous-clav. + axillaire inf. (niv.1à4+IP)": "0",
+                        "RT ganglionnaire option : CMI + niveaux 3-4 (tumeur centrale/interne)": "0",
+                        "RT pariétale et ganglionnaire complète": "0",
+                        "Mastectomie totale simple (± RMI)": "0",
+                        "Reprise chirurgicale conservatrice avec marges saines": "0",
+                        "Mastectomie (reprise conservatrice impossible)": "1",
+                        "Pas d'irradiation ganglionnaire": "0",
+                        "Pas de RT de paroi": "0",
+                        "Abstention ganglion sentinelle": "Non renseigné",
+                        "Ganglion sentinelle (procédure)": "Non renseigné",
+                        "TAD": "Non renseigné",
+                        "Curage axillaire": "Non renseigné",
+                        "Stop (pas de curage complémentaire)": "Non renseigné",
+                        "RT loco-régionale": "Non renseigné",
+                        "Abstention de chimiothérapie": "Non renseigné",
+                        "Chimiothérapie": "Non renseigné",
+                        "Chimiothérapie + anti-HER2 (trastuzumab ± pertuzumab)": "Non renseigné",
+                        "Hormonothérapie seule": "Non renseigné",
+                        "Hormonothérapie + chimiothérapie (option)": "Non renseigné",
+                        "Hormonothérapie + signature génomique (algorithme dédié)": "Non renseigné",
+                        "Olaparib si indiqué (gBRCAm)": "Non renseigné",
+                        "nhibiteur CDK4/6 si indiqué": "Non renseigné",
+                        "RCP (discussion au cas par cas)": "Non renseigné"
+                      },
+                      "infos_science": {}
+                    }
+                  }
+                }
+              }
+            },
+            "1": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie du sein (hypofractionnée modérée)": "1",
+                "Boost / surimpression lit opératoire": "0",
+                "Radiothérapie de la paroi thoracique": "0",
+                "RT ganglionnaire : CMI + sus/sous-clav. + axillaire inf. (niv.1à4+IP)": "0",
+                "RT ganglionnaire option : CMI + niveaux 3-4 (tumeur centrale/interne)": "0",
+                "RT pariétale et ganglionnaire complète": "0",
+                "Mastectomie totale simple (± RMI)": "0",
+                "Reprise chirurgicale conservatrice avec marges saines": "1",
+                "Mastectomie (reprise conservatrice impossible)": "0",
+                "Pas d'irradiation ganglionnaire": "0",
+                "Pas de RT de paroi": "0",
+                "Abstention ganglion sentinelle": "Non renseigné",
+                "Ganglion sentinelle (procédure)": "Non renseigné",
+                "TAD": "Non renseigné",
+                "Curage axillaire": "Non renseigné",
+                "Stop (pas de curage complémentaire)": "Non renseigné",
+                "RT loco-régionale": "Non renseigné",
+                "Abstention de chimiothérapie": "Non renseigné",
+                "Chimiothérapie": "Non renseigné",
+                "Chimiothérapie + anti-HER2 (trastuzumab ± pertuzumab)": "Non renseigné",
+                "Hormonothérapie seule": "Non renseigné",
+                "Hormonothérapie + chimiothérapie (option)": "Non renseigné",
+                "Hormonothérapie + signature génomique (algorithme dédié)": "Non renseigné",
+                "Olaparib si indiqué (gBRCAm)": "Non renseigné",
+                "nhibiteur CDK4/6 si indiqué": "Non renseigné",
+                "RCP (discussion au cas par cas)": "Non renseigné"
+              },
+              "infos_science": {}
+            }
+          }
+        },
+        "1": {
+          "type": "question",
+          "titre": "Âge ≥ 50 ans",
+          "choix": {
+            "0": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie du sein (hypofractionnée modérée)": "1",
+                "Boost / surimpression lit opératoire": "1",
+                "Radiothérapie de la paroi thoracique": "0",
+                "RT ganglionnaire : CMI + sus/sous-clav. + axillaire inf. (niv.1à4+IP)": "0",
+                "RT ganglionnaire option : CMI + niveaux 3-4 (tumeur centrale/interne)": "0",
+                "RT pariétale et ganglionnaire complète": "0",
+                "Mastectomie totale simple (± RMI)": "0",
+                "Reprise chirurgicale conservatrice avec marges saines": "0",
+                "Mastectomie (reprise conservatrice impossible)": "0",
+                "Pas d'irradiation ganglionnaire": "0",
+                "Pas de RT de paroi": "0",
+                "Abstention ganglion sentinelle": "Non renseigné",
+                "Ganglion sentinelle (procédure)": "Non renseigné",
+                "TAD": "Non renseigné",
+                "Curage axillaire": "Non renseigné",
+                "Stop (pas de curage complémentaire)": "Non renseigné",
+                "RT loco-régionale": "Non renseigné",
+                "Abstention de chimiothérapie": "Non renseigné",
+                "Chimiothérapie": "Non renseigné",
+                "Chimiothérapie + anti-HER2 (trastuzumab ± pertuzumab)": "Non renseigné",
+                "Hormonothérapie seule": "Non renseigné",
+                "Hormonothérapie + chimiothérapie (option)": "Non renseigné",
+                "Hormonothérapie + signature génomique (algorithme dédié)": "Non renseigné",
+                "Olaparib si indiqué (gBRCAm)": "Non renseigné",
+                "nhibiteur CDK4/6 si indiqué": "Non renseigné",
+                "RCP (discussion au cas par cas)": "Non renseigné"
+              },
+              "infos_science": {}
+            },
+            "1": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie du sein (hypofractionnée modérée)": "1",
+                "Boost / surimpression lit opératoire": "0.5",
+                "Radiothérapie de la paroi thoracique": "0",
+                "RT ganglionnaire : CMI + sus/sous-clav. + axillaire inf. (niv.1à4+IP)": "0",
+                "RT ganglionnaire option : CMI + niveaux 3-4 (tumeur centrale/interne)": "0",
+                "RT pariétale et ganglionnaire complète": "0",
+                "Mastectomie totale simple (± RMI)": "0",
+                "Reprise chirurgicale conservatrice avec marges saines": "0",
+                "Mastectomie (reprise conservatrice impossible)": "0",
+                "Pas d'irradiation ganglionnaire": "0",
+                "Pas de RT de paroi": "0",
+                "Abstention ganglion sentinelle": "Non renseigné",
+                "Ganglion sentinelle (procédure)": "Non renseigné",
+                "TAD": "Non renseigné",
+                "Curage axillaire": "Non renseigné",
+                "Stop (pas de curage complémentaire)": "Non renseigné",
+                "RT loco-régionale": "Non renseigné",
+                "Abstention de chimiothérapie": "Non renseigné",
+                "Chimiothérapie": "Non renseigné",
+                "Chimiothérapie + anti-HER2 (trastuzumab ± pertuzumab)": "Non renseigné",
+                "Hormonothérapie seule": "Non renseigné",
+                "Hormonothérapie + chimiothérapie (option)": "Non renseigné",
+                "Hormonothérapie + signature génomique (algorithme dédié)": "Non renseigné",
+                "Olaparib si indiqué (gBRCAm)": "Non renseigné",
+                "nhibiteur CDK4/6 si indiqué": "Non renseigné",
+                "RCP (discussion au cas par cas)": "Non renseigné"
+              },
+              "infos_science": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
