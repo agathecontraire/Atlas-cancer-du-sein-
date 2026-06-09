@@ -192,7 +192,7 @@
     var v = '?_v=' + Date.now();
 
     Promise.all([
-      fetch('arbre_dynamique.json' + v).then(function(r) {
+      fetch('arbre_decision.json' + v).then(function(r) {
         if (!r.ok) throw new Error('arbre_dynamique.json HTTP ' + r.status);
         return r.json();
       }),
