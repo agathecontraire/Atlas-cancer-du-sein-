@@ -1,0 +1,649 @@
+{
+  "type": "question",
+  "titre": "Quel arbre de décision souhaitez-vous utiliser ?",
+  "choix": {
+    "Chirurgie ganglionnaire si chirurgie première": {
+      "type": "question",
+      "titre": "Statut ganglionnaire clinique initial ?",
+      "choix": {
+        "cN0": {
+          "type": "question",
+          "titre": "La patiente remplit-elle les critères d’abstention du ganglion sentinelle ?",
+          "choix": {
+            "Oui : cT1N0 + RH+ HER2- + ménopausée + traitement conservateur + RT prévue": {
+              "type": "resultat",
+              "donnees": {
+                "Abstention du ganglion sentinelle": "1",
+                "Ganglion sentinelle": "0",
+                "Curage axillaire": "0",
+                "RT loco-régionale": "0",
+                "Note": "Sous réserve d’une échographie axillaire ciblée prouvant le statut N0 avec échographie en centre spécialisé pré-opératoire. Pas de désescalade pour le cancer lobulaire et pour les grade III."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.90"
+            },
+            "Non : autre traitement conservateur ou mastectomie": {
+              "type": "question",
+              "titre": "Résultat du ganglion sentinelle ?",
+              "choix": {
+                "Négatif / cellules isolées / micrométastatique": {
+                  "type": "resultat",
+                  "donnees": {
+                    "Ganglion sentinelle": "1",
+                    "Stop (pas de curage complémentaire)": "1",
+                    "Curage axillaire": "0",
+                    "RT loco-régionale": "0",
+                    "Note": "RT du sein ou de la paroi selon les mêmes critères que dans les autres situations."
+                  },
+                  "infos_science": {},
+                  "source_senorif": "SENORIF 2025-2026, p.90"
+                },
+                "Positif macrométastatique": {
+                  "type": "resultat",
+                  "donnees": {
+                    "Ganglion sentinelle": "1",
+                    "Curage axillaire": "1",
+                    "RT loco-régionale": "0"
+                  },
+                  "infos_science": {},
+                  "source_senorif": "SENORIF 2025-2026, p.90"
+                }
+              },
+              "source_senorif": "SENORIF 2025-2026, p.90"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.90"
+        },
+        "cN1": {
+          "type": "question",
+          "titre": "Tous les critères de désescalade sont-ils réunis ?",
+          "choix": {
+            "Oui : non pT4d + ≤ 2 GS+ + traitement médical adjuvant + RT sein/paroi + pas de contre-indication à la RT": {
+              "type": "resultat",
+              "donnees": {
+                "Curage axillaire": "0",
+                "RT loco-régionale": "1"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.90"
+            },
+            "Non": {
+              "type": "resultat",
+              "donnees": {
+                "Curage axillaire": "1",
+                "RT loco-régionale": "1"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.90"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.90"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.90"
+    },
+    "Chirurgie ganglionnaire après chimiothérapie néoadjuvante": {
+      "type": "question",
+      "titre": "Situation clinique après chimiothérapie néoadjuvante ?",
+      "choix": {
+        "Tout T cN0 → ycN0": {
+          "type": "question",
+          "titre": "Résultat du ganglion sentinelle ?",
+          "choix": {
+            "Négatif": {
+              "type": "resultat",
+              "donnees": {
+                "Ganglion sentinelle": "1",
+                "Stop (pas de curage complémentaire)": "1",
+                "Curage axillaire": "0",
+                "RT loco-régionale": "0",
+                "Note": "RT du sein ou de la paroi selon les mêmes critères que dans les autres situations."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.91"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.91"
+        },
+        "cT1-3 cN1 → ycN0": {
+          "type": "question",
+          "titre": "Résultat de la TAD ?",
+          "choix": {
+            "Cellules isolées + ganglion négatif stérilisé": {
+              "type": "resultat",
+              "donnees": {
+                "TAD": "1",
+                "Curage axillaire": "0",
+                "RT loco-régionale": "1"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.91"
+            },
+            "Négatif": {
+              "type": "resultat",
+              "donnees": {
+                "TAD": "1",
+                "Curage axillaire": "0",
+                "RT loco-régionale": "1"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.91"
+            },
+            "Positif : macrométastatique ou micrométastatique": {
+              "type": "resultat",
+              "donnees": {
+                "TAD": "1",
+                "Curage axillaire": "1",
+                "RT loco-régionale": "1"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.91"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.91"
+        },
+        "cN1 / ycN1 / ypN1 ou T4d N+": {
+          "type": "resultat",
+          "donnees": {
+            "Curage axillaire": "1",
+            "RT loco-régionale": "1",
+            "Note": "Pour les T > 5 cm initialement et cN0 avec tumeur centrale ou interne, la RT ganglionnaire peut être proposée en plus de l’irradiation de paroi."
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.91"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.91"
+    },
+    "Traitement systémique adjuvant ≥ pT1c": {
+      "type": "question",
+      "titre": "Type biologique de cancer ?",
+      "choix": {
+        "Triple négatif": {
+          "type": "resultat",
+          "donnees": {
+            "Chimiothérapie": "1",
+            "Olaparib si indiqué": "0.5",
+            "Hormonothérapie": "0",
+            "Anti-HER2": "0"
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.104"
+        },
+        "HER2+": {
+          "type": "resultat",
+          "donnees": {
+            "Chimiothérapie": "1",
+            "Thérapie anti-HER2": "1",
+            "Hormonothérapie si indiquée": "0.5"
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.104"
+        },
+        "RH+ HER2-": {
+          "type": "question",
+          "titre": "Niveau de risque clinique ?",
+          "choix": {
+            "Haut risque": {
+              "type": "resultat",
+              "donnees": {
+                "Chimiothérapie": "1",
+                "Hormonothérapie": "1",
+                "Inhibiteur de CDK4/6 si indiqué": "0.5",
+                "Olaparib si indiqué": "0.5",
+                "Note": "Haut risque : grade 3 et préménopause pT3 ; pN+ et préménopause ; pN2 et post-ménopause."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.104"
+            },
+            "Risque intermédiaire": {
+              "type": "resultat",
+              "donnees": {
+                "Signature génomique": "1",
+                "Hormonothérapie": "1",
+                "Chimiothérapie": "0.5"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.104"
+            },
+            "Bas risque": {
+              "type": "resultat",
+              "donnees": {
+                "Abstention de chimiothérapie": "1",
+                "Chimiothérapie": "0",
+                "Hormonothérapie": "1",
+                "Note": "Bas risque : pT1, pN0/i+, grade 1, RE+ et RP+, Ki67 < 15-20 %, pas d’emboles."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.104"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.104"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.104"
+    },
+    "Petites tumeurs pT1ab pN0 HER2+": {
+      "type": "question",
+      "titre": "Taille pathologique ?",
+      "choix": {
+        "pT1a": {
+          "type": "question",
+          "titre": "Récepteurs hormonaux ?",
+          "choix": {
+            "RE+": {
+              "type": "resultat",
+              "donnees": {
+                "Hormonothérapie seule": "0.5",
+                "Abstention": "0.5",
+                "Chimiothérapie + trastuzumab": "0"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.105"
+            },
+            "RE-": {
+              "type": "resultat",
+              "donnees": {
+                "RCP": "1",
+                "Note": "Critères de gravité pour les T1a HER2+ : Ki67 > 20 %, RH-, présence d’emboles, grade 3, non ménopausée."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.105"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.105"
+        },
+        "pT1b": {
+          "type": "resultat",
+          "donnees": {
+            "Chimiothérapie + trastuzumab": "1",
+            "Hormonothérapie si RH+": "0.5"
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.105"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.105"
+    },
+    "Petites tumeurs pT1ab pN0 triple négatif": {
+      "type": "question",
+      "titre": "Taille pathologique ?",
+      "choix": {
+        "pT1a": {
+          "type": "resultat",
+          "donnees": {
+            "Abstention de chimiothérapie": "1",
+            "Chimiothérapie": "0"
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.106"
+        },
+        "pT1b": {
+          "type": "resultat",
+          "donnees": {
+            "Chimiothérapie": "1",
+            "Note": "Abstention possible pour formes rares de bon pronostic."
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.106"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.106"
+    },
+    "Petites tumeurs pT1ab pN0 RH+ HER2-": {
+      "type": "question",
+      "titre": "Taille pathologique ?",
+      "choix": {
+        "pT1a": {
+          "type": "resultat",
+          "donnees": {
+            "Hormonothérapie seule": "0.5",
+            "Abstention": "0.5",
+            "Chimiothérapie": "0",
+            "Note": "Critères d’abstention pour les T1a : grade 1-2, RE/RP élevés."
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.107"
+        },
+        "pT1b": {
+          "type": "question",
+          "titre": "Critères de gravité présents ?",
+          "choix": {
+            "Non": {
+              "type": "resultat",
+              "donnees": {
+                "Hormonothérapie": "1",
+                "Chimiothérapie": "0"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.107"
+            },
+            "Oui": {
+              "type": "resultat",
+              "donnees": {
+                "Hormonothérapie": "1",
+                "Signature génomique": "0.5",
+                "Chimiothérapie": "0.5",
+                "Note": "Critères de gravité T1b : prolifération élevée, Ki67 > 20 %, RP-, non ménopausée, grade 3."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.107"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.107"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.107"
+    },
+    "Signature génomique RH+ HER2-": {
+      "type": "question",
+      "titre": "Statut ménopausique et ganglionnaire ?",
+      "choix": {
+        "Ménopausée, pN0 ou pN1": {
+          "type": "question",
+          "titre": "Résultat du test génomique ?",
+          "choix": {
+            "Risque faible": {
+              "type": "resultat",
+              "donnees": {
+                "Pas de chimiothérapie": "1",
+                "Chimiothérapie": "0",
+                "Note": "Risque faible : Oncotype RS ≤ 25, EPClin faible, Prosigna faible."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.111"
+            },
+            "Risque intermédiaire avec Prosigna ≤ 10 % à 10 ans": {
+              "type": "resultat",
+              "donnees": {
+                "Pas de chimiothérapie": "1",
+                "Chimiothérapie": "0"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.111"
+            },
+            "Risque intermédiaire avec Prosigna > 10 % à 10 ans": {
+              "type": "resultat",
+              "donnees": {
+                "Chimiothérapie": "1"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.111"
+            },
+            "Risque élevé": {
+              "type": "resultat",
+              "donnees": {
+                "Chimiothérapie": "1",
+                "Note": "Risque élevé : Oncotype RS > 25, EPClin élevé, Prosigna élevé."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.111"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.111"
+        },
+        "Non ménopausée, pN0": {
+          "type": "question",
+          "titre": "Résultat du test génomique ?",
+          "choix": {
+            "Risque faible": {
+              "type": "resultat",
+              "donnees": {
+                "Pas de chimiothérapie": "1",
+                "Chimiothérapie": "0",
+                "Note": "Risque faible : Oncotype RS < 16, EPClin faible, Prosigna faible."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.111"
+            },
+            "RS < 16 / EPClin bas risque / Prosigna risque métastatique ≤ 10 % à 10 ans": {
+              "type": "resultat",
+              "donnees": {
+                "Pas de chimiothérapie": "1",
+                "Chimiothérapie": "0"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.111"
+            },
+            "RS 16-21": {
+              "type": "question",
+              "titre": "Bas risque clinique ?",
+              "choix": {
+                "Oui : T≤3 cm grade 1 ou T≤2 cm grade 2 ou T≤1 cm grade 3": {
+                  "type": "resultat",
+                  "donnees": {
+                    "Pas de chimiothérapie": "1",
+                    "Chimiothérapie": "0"
+                  },
+                  "infos_science": {},
+                  "source_senorif": "SENORIF 2025-2026, p.111"
+                },
+                "Non": {
+                  "type": "resultat",
+                  "donnees": {
+                    "Chimiothérapie": "1"
+                  },
+                  "infos_science": {},
+                  "source_senorif": "SENORIF 2025-2026, p.111"
+                }
+              },
+              "source_senorif": "SENORIF 2025-2026, p.111"
+            },
+            "RS ≥ 21 / EPClin élevé / Prosigna risque métastatique > 10 % à 10 ans": {
+              "type": "resultat",
+              "donnees": {
+                "Chimiothérapie": "1"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.111"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.111"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.111"
+    },
+    "Radiothérapie du sein après traitement conservateur": {
+      "type": "question",
+      "titre": "Marges saines ?",
+      "choix": {
+        "Oui": {
+          "type": "resultat",
+          "donnees": {
+            "Radiothérapie du sein": "1",
+            "Boost / surimpression lit opératoire": "0.5",
+            "Note": "RT hypofractionnée modérée. Boost : âge < 50 ans ; option si âge ≥ 50 ans avec au moins un facteur parmi grade III, emboles vasculaires, phénotype triple négatif."
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.129"
+        },
+        "Non": {
+          "type": "question",
+          "titre": "Reprise chirurgicale conservatrice avec marges saines possible ?",
+          "choix": {
+            "Oui": {
+              "type": "resultat",
+              "donnees": {
+                "Reprise chirurgicale conservatrice": "1",
+                "Radiothérapie du sein": "1"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.129"
+            },
+            "Non": {
+              "type": "question",
+              "titre": "Type d’atteinte des berges ?",
+              "choix": {
+                "Atteinte unifocale d’une berge par composante in situ, sans MCC résiduelles": {
+                  "type": "question",
+                  "titre": "Âge et stade ?",
+                  "choix": {
+                    "Âge ≤ 40 ans ou pT2": {
+                      "type": "resultat",
+                      "donnees": {
+                        "Mastectomie": "1",
+                        "Radiothérapie du sein": "0"
+                      },
+                      "infos_science": {},
+                      "source_senorif": "SENORIF 2025-2026, p.129"
+                    },
+                    "Âge > 40 ans et pT1": {
+                      "type": "resultat",
+                      "donnees": {
+                        "Mastectomie": "0.5",
+                        "Radiothérapie du sein": "0.5",
+                        "Boost": "0.5"
+                      },
+                      "infos_science": {},
+                      "source_senorif": "SENORIF 2025-2026, p.129"
+                    }
+                  },
+                  "source_senorif": "SENORIF 2025-2026, p.129"
+                },
+                "Atteinte étendue unifocale ou multifocale des berges": {
+                  "type": "resultat",
+                  "donnees": {
+                    "Mastectomie totale simple": "1",
+                    "Reconstruction mammaire immédiate": "0.5"
+                  },
+                  "infos_science": {},
+                  "source_senorif": "SENORIF 2025-2026, p.129"
+                }
+              },
+              "source_senorif": "SENORIF 2025-2026, p.129"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.129"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.129"
+    },
+    "Radiothérapie de la paroi thoracique après mastectomie": {
+      "type": "question",
+      "titre": "Statut pN après mastectomie ?",
+      "choix": {
+        "pN0(i-), pN0(i+), pN1mi": {
+          "type": "question",
+          "titre": "Indication de radiothérapie de paroi ?",
+          "choix": {
+            "pT3-T4": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie de la paroi": "1",
+                "Radiothérapie pariétale et ganglionnaire": "0",
+                "Note": "RT hypofractionnée modérée recommandée."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.130"
+            },
+            "Au moins 2 facteurs : âge < 40 ans, emboles, phénotype triple négatif/grade III, pT2": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie de la paroi": "1",
+                "Radiothérapie pariétale et ganglionnaire": "0",
+                "Note": "RT hypofractionnée modérée recommandée."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.130"
+            },
+            "Berges latérales atteintes": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie de la paroi": "1",
+                "Radiothérapie pariétale et ganglionnaire": "0",
+                "Note": "RT hypofractionnée modérée recommandée."
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.130"
+            },
+            "Aucun de ces critères": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie de la paroi": "0"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.130"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.130"
+        },
+        "≥ pN1": {
+          "type": "resultat",
+          "donnees": {
+            "Radiothérapie pariétale et ganglionnaire": "1",
+            "Radiothérapie de la paroi": "1",
+            "Radiothérapie ganglionnaire": "1"
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.130"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.130"
+    },
+    "Radiothérapie des aires ganglionnaires": {
+      "type": "question",
+      "titre": "Statut ganglionnaire post-chirurgical ?",
+      "choix": {
+        "pN0(i-), pN0(i+), pN1mi": {
+          "type": "question",
+          "titre": "Tumeur centrale/interne ou critères particuliers ?",
+          "choix": {
+            "Oui : tumeur centrale/interne ou pT3 ou présence de ≥ 2 critères (âge ≤40 ans, taille >2 cm, emboles, grade III)": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie ganglionnaire option CMI + niveaux 3-4": "0.5",
+                "Pas d’irradiation ganglionnaire": "0.5"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.131"
+            },
+            "Non": {
+              "type": "resultat",
+              "donnees": {
+                "Pas d’irradiation ganglionnaire": "1",
+                "Radiothérapie ganglionnaire": "0"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.131"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.131"
+        },
+        "pN ≥ 1 avec GS positif sans curage axillaire": {
+          "type": "resultat",
+          "donnees": {
+            "Radiothérapie ganglionnaire CMI + sus/sous-claviculaire + interpectorale + axillaire inférieure": "1",
+            "Note": "CMI, aires sus et sous claviculaires, interpectorale et axillaire inférieure [CMI + niveaux 1 à 4 + IP]."
+          },
+          "infos_science": {},
+          "source_senorif": "SENORIF 2025-2026, p.131"
+        },
+        "pN ≥ 1 avec curage axillaire": {
+          "type": "question",
+          "titre": "Critères d’irradiation après curage ?",
+          "choix": {
+            "Envahissement ganglionnaire > 50 % si ≥ 6 ganglions examinés, ou nombre de ganglions examinés insuffisant (< 6)": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie ganglionnaire CMI + sus/sous-claviculaire + interpectorale + axillaire inférieure niveau 1": "1"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.131"
+            },
+            "Aucun de ces critères": {
+              "type": "resultat",
+              "donnees": {
+                "Radiothérapie ganglionnaire complète": "0"
+              },
+              "infos_science": {},
+              "source_senorif": "SENORIF 2025-2026, p.131"
+            }
+          },
+          "source_senorif": "SENORIF 2025-2026, p.131"
+        }
+      },
+      "source_senorif": "SENORIF 2025-2026, p.131"
+    }
+  },
+  "source_senorif": "SENORIF 2025-2026, pages 90-131"
+}
