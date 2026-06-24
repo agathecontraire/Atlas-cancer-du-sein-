@@ -1,0 +1,1185 @@
+{
+  "etudes": [
+    {
+      "id": "2",
+      "auteur": "Perez EA et al.",
+      "date": "2011",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/21768458/ (Perez EA et al., J Clin Oncol 2011; doi:10.1200/JCO.2011.35.0868)",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/21768458/",
+      "objectif": "Rapporter le suivi à long terme (DFS et OS) de l’analyse conjointe des essais adjuvants NSABP B-31 et NCCTG N9831 comparant chimiothérapie ± trastuzumab.",
+      "type_etude": "Essai randomisé (phase III) avec analyse conjointe; suivi prolongé.",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "paclitaxel-trastuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "HER2+ (critère d'inclusion)."
+      },
+      "interventions": {
+        "CTadj": "Chimiothérapie adjuvante: AC (doxorubicine + cyclophosphamide) puis paclitaxel (schéma selon essai).",
+        "Immunothérapie": "Trastuzumab adjuvant (bras expérimental; timing selon essai, principalement concomitant au paclitaxel dans l’analyse)."
+      },
+      "issues": "À 3.9 ans: réduction significative des événements DFS en faveur du trastuzumab (P<.001) et réduction relative de 39% du risque de décès (P<.001).",
+      "indications": [
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "3",
+      "auteur": "Piccart-Gebhart MJ et al.",
+      "date": "2005",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/16236737/ (Piccart-Gebhart MJ et al., NEJM 2005; doi:10.1056/NEJMoa052306)",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/16236737/",
+      "objectif": "Comparer 1 an (ou 2 ans) de trastuzumab après chimiothérapie adjuvante/néoadjuvante versus observation chez cancers du sein HER2+; critère principal DFS.",
+      "type_etude": "Phase III randomisée.",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "neoadjuvant",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "HER2+ (critère d'inclusion)."
+      },
+      "interventions": {
+        "CTadj": "Chimiothérapie néo/adjuvante (au moins 4 cycles) complétée avant randomisation (régimens variés).",
+        "Immunothérapie": "Trastuzumab 1 an (q3 semaines) vs observation."
+      },
+      "issues": "DFS: HR 0.54 (IC95% 0.43–0.67); bénéfice absolu DFS à 2 ans +8.4 points. OS: 29 vs 37 décès (non significatif). Cardiotoxicité sévère 0.5%.",
+      "indications": [
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "4",
+      "auteur": "Cameron D et al.",
+      "date": "2017",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/28215665/ (Cameron D et al., Lancet 2017; doi:10.1016/S0140-6736(16)32616-2)",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/28215665/",
+      "objectif": "Évaluer les résultats à long terme du HERA: 1 an de trastuzumab vs observation (DFS et OS), et 2 ans vs 1 an.",
+      "type_etude": "Phase III randomisée, suivi long terme.",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "HER2+."
+      },
+      "interventions": {
+        "Immunothérapie": "Trastuzumab 1 an ou 2 ans vs observation (post-chimiothérapie)."
+      },
+      "issues": "DFS: HR 0.76 (IC95% 0.68–0.86) et OS: HR 0.74 (0.64–0.86) pour 1 an vs observation. 2 ans vs 1 an: HR 1.02 (0.89–1.17). DFS à 10 ans: 63% obs vs 69% (1 an) vs 69% (2 ans).",
+      "indications": [
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "5",
+      "auteur": "Bradley R et al.",
+      "date": "2021",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/34339645/ (Bradley R et al., EBCTCG, Lancet 2021; doi:10.1016/S1470-2045(21)00288-6)",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/34339645/",
+      "objectif": "Quantifier, via méta-analyse IPD EBCTCG, l’impact de l’ajout de trastuzumab à la chimiothérapie adjuvante sur récidive, mortalité par cancer du sein et mortalité toutes causes en HER2+ opérable.",
+      "type_etude": "Méta-analyse IPD d’essais randomisés (niveau 1a).",
+      "niveau_preuve": "C",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "HER2+."
+      },
+      "interventions": {
+        "Immunothérapie": "Trastuzumab ajouté à la chimiothérapie (durée moyenne programmée 14.4 mois)."
+      },
+      "issues": "Récidive: RR 0.66 (IC95% 0.62–0.71). Mortalité par cancer du sein: RR 0.67 (0.61–0.73). Réduction absolue à 10 ans: récidive −9.0% (IC95% 7.4–10.7); mortalité cancer du sein −6.4% (4.9–7.8); mortalité toutes causes −6.5% (5.0–8.0); pas d’augmentation des décès sans récidive.",
+      "indications": [
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "6",
+      "auteur": "Tolaney SM et al.",
+      "date": "2015",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/25564897/ (Tolaney SM et al., NEJM 2015) PMID:25564897",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/25564897/",
+      "objectif": "Evaluate de-escalated adjuvant paclitaxel + trastuzumab for small (≤3 cm), node-negative HER2+ breast cancer; primary endpoint invasive DFS.",
+      "type_etude": "Prospective phase II, single-arm (uncontrolled), multicenter",
+      "niveau_preuve": "B",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "metastatique",
+        "paclitaxel-trastuzumab",
+        "small-node-negative",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "AJCC": "Stage I (predominantly)",
+        "T": "≤3 cm",
+        "N": "N0",
+        "M": "M0",
+        "HER2": "Positive (IHC/FISH per protocol)"
+      },
+      "interventions": {
+        "CTadj": "Paclitaxel + trastuzumab (12 weeks) then trastuzumab monotherapy to 1 year",
+        "Immunothérapie": "No",
+        "Hormonothérapie": "Allowed for HR+ (per standard) (not detailed in abstract)"
+      },
+      "issues": "Primary endpoint: 3-year invasive DFS 98.7% (95% CI 97.6–99.8). 12 relapses; 2 distant metastatic events. Grade 3 neuropathy 3.2%. Symptomatic CHF 0.5%; asymptomatic LVEF decline 3.2%.",
+      "indications": [
+        "her2_adjuvant_petites_tumeurs_n0_paclitaxel_trastuzumab"
+      ]
+    },
+    {
+      "id": "7",
+      "auteur": "Tolaney SM et al.",
+      "date": "2019",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/30939096/ (Tolaney SM et al., J Clin Oncol 2019) PMID:30939096",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/30939096/",
+      "objectif": "Planned secondary analysis: report longer-term outcomes of APT regimen and exploratory biology (PAM50) / TIPN genetics.",
+      "type_etude": "Prospective phase II, single-arm; planned long-term follow-up analysis",
+      "niveau_preuve": "B",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "paclitaxel-trastuzumab",
+        "small-node-negative",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "AJCC": "Stage I (predominantly)",
+        "T": "≤3 cm",
+        "N": "N0",
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "CTadj": "Paclitaxel + trastuzumab (12 weeks) then trastuzumab to 1 year",
+        "Immunothérapie": "No"
+      },
+      "issues": "After median 6.5y: 7-year DFS 93.3% (95% CI 90.4–96.2); 7-year OS 95.0% (95% CI 92.4–97.7); 7-year RFI 97.5% (95% CI 95.9–99.1); 4 distant recurrences (1.0%).",
+      "indications": [
+        "her2_adjuvant_petites_tumeurs_n0_paclitaxel_trastuzumab",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "8",
+      "auteur": "Tolaney SM et al.",
+      "date": "2023",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/36858723/ (Tolaney SM et al., Lancet Oncol 2023) PMID:36858723",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/36858723/",
+      "objectif": "Final 10-year analysis of APT regimen; report long-term survival outcomes and explore prognostic biomarkers (HER2DX).",
+      "type_etude": "Prospective phase II, single-arm; final long-term analysis",
+      "niveau_preuve": "B",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "paclitaxel-trastuzumab",
+        "small-node-negative",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "AJCC": "Stage I",
+        "T": "≤3 cm",
+        "N": "N0",
+        "M": "M0",
+        "RE": "HR+/- (67% HR+)",
+        "HER2": "Positive",
+        "Âge moyen / (median": "Mean 55 years (SD 10.5)"
+      },
+      "interventions": {
+        "CTadj": "Paclitaxel + trastuzumab then trastuzumab to 1 year",
+        "Immunothérapie": "No"
+      },
+      "issues": "10-year iDFS 91.3% (95% CI 88.3–94.4); 10-year RFI 96.3% (95% CI 94.3–98.3); 10-year OS 94.3% (95% CI 91.8–96.8); 10-year BCSS 98.8% (95% CI 97.6–100). 31 iDFS events: 6 locoregional ipsilateral, 9 contralateral, 6 distant, 10 all-cause deaths. HER2DX risk score associated with iDFS and RFI.",
+      "indications": [
+        "her2_adjuvant_petites_tumeurs_n0_paclitaxel_trastuzumab",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "9",
+      "auteur": "Tolaney SM et al.",
+      "date": "2021",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/34077270/ (Tolaney SM et al., J Clin Oncol 2021) PMID:34077270",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/34077270/",
+      "objectif": "Compare clinically relevant toxicities (CRT) of 1-year adjuvant T-DM1 vs paclitaxel+trastuzumab (TH) and assess iDFS with T-DM1 in stage I HER2+ BC.",
+      "type_etude": "Randomized phase II, open-label, multicenter",
+      "niveau_preuve": "B",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "paclitaxel-trastuzumab",
+        "small-node-negative",
+        "t-dm1",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "AJCC": "Stage I",
+        "T": "T1 (stage I) (exact distribution not in abstract)",
+        "N": "N0 (stage I)",
+        "M": "M0",
+        "HER2": "Positive (central)"
+      },
+      "interventions": {
+        "CTadj": "T-DM1 (1 year) or paclitaxel+trastuzumab then trastuzumab to 1 year",
+        "Immunothérapie": "No"
+      },
+      "issues": "CRTs: 46% (T-DM1) vs 47% (TH), P=0.83. 3-year iDFS (T-DM1) 97.8% (95% CI 96.3–99.3). Patient-reported outcomes favored T-DM1 (less neuropathy/alopecia).",
+      "indications": [
+        "her2_adjuvant_petites_tumeurs_n0_paclitaxel_trastuzumab",
+        "her2_adjuvant_petites_tumeurs_n0_tdm1",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "10",
+      "auteur": "Tolaney SM et al.",
+      "date": "2024",
+      "reference": "https://pubmed.ncbi.nlm.nih.gov/38935923/ (Tolaney SM et al., J Clin Oncol 2024) PMID:38935923",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/38935923/",
+      "objectif": "Report long-term outcomes of stage I HER2+ patients receiving adjuvant T-DM1 and identify prognostic predictors (HER2DX, heterogeneity, etc.).",
+      "type_etude": "Randomized phase II; long-term follow-up + correlative biomarker analyses",
+      "niveau_preuve": "B",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "her2",
+        "small-node-negative",
+        "t-dm1"
+      ],
+      "criteres": {
+        "AJCC": "Stage I",
+        "T": "T1",
+        "N": "N0",
+        "M": "M0",
+        "HER2": "Positive (central)"
+      },
+      "interventions": {
+        "CTadj": "T-DM1 1 year (primary arm) vs TH",
+        "Immunothérapie": "No"
+      },
+      "issues": "After median 5.8y: 5-year iDFS 97.0% (95% CI 95.2–98.7) in T-DM1 arm; 5-year RFI 98.3% (95% CI 97.0–99.7); 5-year OS 97.8% (95% CI 96.3–99.3); 5-year BCSS 99.4% (95% CI 98.6–100). 5-year iDFS in TH arm 91.1% (trial not powered for this comparison). HER2DX risk score associated with recurrence risk.",
+      "indications": [
+        "her2_adjuvant_petites_tumeurs_n0_tdm1"
+      ]
+    },
+    {
+      "id": "11",
+      "auteur": "Baselga J",
+      "date": "2012",
+      "reference": "Baselga J, NEJM 2012, PMID 22149875",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/22149875/",
+      "objectif": "Evaluate OS/PFS benefit of adding pertuzumab to trastuzumab+docetaxel in HER2+ MBC",
+      "type_etude": "Phase III randomized, double-blind",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "chimiotherapie",
+        "docetaxel",
+        "her2",
+        "ligne-1-metastatique",
+        "metastatique",
+        "pertuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_1l_pertuzumab_trastuzumab_docetaxel"
+      ]
+    },
+    {
+      "id": "12",
+      "auteur": "Swain SM",
+      "date": "2015",
+      "reference": "Swain SM, NEJM 2015, PMID 25856494",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/25856494/",
+      "objectif": "Overall survival update of CLEOPATRA",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "docetaxel",
+        "her2",
+        "ligne-1-metastatique",
+        "metastatique",
+        "pertuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_1l_pertuzumab_trastuzumab_docetaxel"
+      ]
+    },
+    {
+      "id": "13",
+      "auteur": "Swain SM",
+      "date": "2020",
+      "reference": "Swain SM, Lancet Oncol 2020, PMID 32171426",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/32171426/",
+      "objectif": "End-of-study OS analysis",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "docetaxel",
+        "her2",
+        "ligne-1-metastatique",
+        "metastatique",
+        "pertuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_1l_pertuzumab_trastuzumab_docetaxel"
+      ]
+    },
+    {
+      "id": "14",
+      "auteur": "von Minckwitz G",
+      "date": "2017",
+      "reference": "von Minckwitz G, NEJM 2017, PMID 28581356",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/28581356/",
+      "objectif": "Adjuvant pertuzumab benefit on iDFS",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "her2",
+        "pertuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_pertuzumab_trastuzumab",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "15",
+      "auteur": "Piccart M",
+      "date": "2022",
+      "reference": "Piccart M, JCO 2022, PMID 35377749",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/35377749/",
+      "objectif": "Long-term OS/iDFS follow-up of APHINITY",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "her2",
+        "pertuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_pertuzumab_trastuzumab",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "16",
+      "auteur": "APHINITY 6 years' follow-up",
+      "date": "",
+      "reference": "Piccart M, J Clin Oncol 2021 (APHINITY 6 years' follow-up), PMID 33539215",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/33539215/",
+      "objectif": "Longer-term follow-up of APHINITY: adjuvant pertuzumab + trastuzumab + chemotherapy vs placebo + trastuzumab + chemotherapy; iDFS/OS by risk groups",
+      "type_etude": "Phase III randomized, double-blind, placebo-controlled",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "pertuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive (IHC 3+ or ISH+)"
+      },
+      "interventions": {
+        "CTadj": "Yes (per protocol backbone)",
+        "Immunothérapie": "No",
+        "Autre intervention": "Pertuzumab (experimental arm)"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_pertuzumab_trastuzumab",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "17",
+      "auteur": "KATHERINE",
+      "date": "",
+      "reference": "von Minckwitz G, NEJM 2019 (KATHERINE), PMID 30516102",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/30516102/",
+      "objectif": "Post-neoadjuvant escalation: adjuvant T-DM1 vs trastuzumab for residual invasive HER2+ disease after neoadjuvant therapy",
+      "type_etude": "Phase III randomized, open-label",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "neoadjuvant",
+        "post-neoadjuvant",
+        "residual-disease",
+        "t-dm1",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive at diagnosis"
+      },
+      "interventions": {
+        "CNA": "Yes (neoadjuvant chemo + anti-HER2)",
+        "CTadj": "Yes (T-DM1 or trastuzumab x14 cycles)",
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DM1 (experimental arm)"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_trastuzumab",
+        "her2_post_neoadjuvant_residu_tdm1"
+      ]
+    },
+    {
+      "id": "18",
+      "auteur": "or KATHERINE investigators",
+      "date": "",
+      "reference": "Geyer CE Jr (or KATHERINE investigators), NEJM 2024 (Survival with T-DM1 in residual HER2+ disease), PMID 39813643",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/39813643/",
+      "objectif": "Long-term survival outcomes from KATHERINE: OS and sustained iDFS benefit of adjuvant T-DM1 vs trastuzumab",
+      "type_etude": "Phase III randomized, open-label (follow-up analysis)",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "neoadjuvant",
+        "post-neoadjuvant",
+        "residual-disease",
+        "t-dm1",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive at diagnosis"
+      },
+      "interventions": {
+        "CNA": "Yes",
+        "CTadj": "Yes (T-DM1 or trastuzumab)",
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DM1"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_trastuzumab",
+        "her2_post_neoadjuvant_residu_tdm1"
+      ]
+    },
+    {
+      "id": "19",
+      "auteur": "ExteNET primary 2-year iDFS",
+      "date": "",
+      "reference": "Chan A, Lancet Oncol 2016 (ExteNET primary 2-year iDFS), PMID 26874901",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/26874901/",
+      "objectif": "Extended adjuvant neratinib for 12 months vs placebo after trastuzumab-based adjuvant therapy; primary endpoint 2-year iDFS",
+      "type_etude": "Phase III randomized, double-blind, placebo-controlled",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "her2",
+        "neratinib",
+        "post-trastuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "CTadj": "Prior trastuzumab-based adjuvant therapy completed",
+        "Immunothérapie": "No",
+        "Autre intervention": "Neratinib (experimental arm)"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_etendu_neratinib",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "20",
+      "auteur": "ExteNET 5-year analysis",
+      "date": "",
+      "reference": "Martin M, Lancet Oncol 2017 (ExteNET 5-year analysis), PMID 29146401",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/29146401/",
+      "objectif": "Protocol-defined 5-year follow-up of ExteNET: durability of iDFS benefit and long-term toxicity",
+      "type_etude": "Phase III randomized, double-blind, placebo-controlled (follow-up)",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "adjuvant",
+        "neratinib",
+        "post-trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No",
+        "Autre intervention": "Neratinib"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_etendu_neratinib",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "21",
+      "auteur": "PERSEPHONE",
+      "date": "",
+      "reference": "Earl HM, Lancet 2019 (PERSEPHONE), PMID 31178152",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/31178152/",
+      "objectif": "Non-inferiority of 6 vs 12 months adjuvant trastuzumab",
+      "type_etude": "Phase III randomized non-inferiority",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "duration",
+        "her2",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "CTadj": "Yes",
+        "Immunothérapie": "No"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_duree_trastuzumab",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "22",
+      "auteur": "PHARE final",
+      "date": "",
+      "reference": "Pivot X, Lancet Oncol 2019 (PHARE final), PMID 31178153",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/31178153/",
+      "objectif": "6 vs 12 months trastuzumab; non-inferiority assessment",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "duration",
+        "her2",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "CTadj": "Yes",
+        "Immunothérapie": "No"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_duree_trastuzumab",
+        "her2_adjuvant_trastuzumab"
+      ]
+    },
+    {
+      "id": "23",
+      "auteur": "NeoSphere",
+      "date": "",
+      "reference": "Gianni L, Lancet Oncol 2012 (NeoSphere), PMID 22153889",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/22153889/",
+      "objectif": "pCR with pertuzumab+trastuzumab+docetaxel",
+      "type_etude": "Phase II randomized",
+      "niveau_preuve": "B",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "neoadjuvant",
+        "pertuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "CNA": "Yes",
+        "Immunothérapie": "No",
+        "Autre intervention": "Pertuzumab"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_trastuzumab",
+        "her2_neoadjuvant_double_blocage"
+      ]
+    },
+    {
+      "id": "24",
+      "auteur": "TRAIN-2",
+      "date": "",
+      "reference": "van Ramshorst MS, JAMA Oncol 2018 (TRAIN-2), PMID 30398570",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/30398570/",
+      "objectif": "Anthracycline vs non-anthracycline neoadjuvant regimens",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "neoadjuvant",
+        "pertuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "CNA": "Yes",
+        "Immunothérapie": "No"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_trastuzumab",
+        "her2_neoadjuvant_double_blocage"
+      ]
+    },
+    {
+      "id": "25",
+      "auteur": "TRAIN-2 3y",
+      "date": "",
+      "reference": "van Ramshorst MS, JAMA Oncol 2021 (TRAIN-2 3y), PMID 33620406",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/33620406/",
+      "objectif": "3-year EFS/OS TRAIN-2",
+      "type_etude": "Phase III follow-up",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "her2",
+        "neoadjuvant",
+        "pertuzumab",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_trastuzumab",
+        "her2_neoadjuvant_double_blocage"
+      ]
+    },
+    {
+      "id": "26",
+      "auteur": "KRISTINE",
+      "date": "",
+      "reference": "Hurvitz SA, J Clin Oncol 2018 (KRISTINE), PMID 29401002",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/29401002/",
+      "objectif": "Compare neoadjuvant T-DM1+pertuzumab vs chemo+trastuzumab+pertuzumab on pCR and EFS",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "adjuvant",
+        "anti-her2",
+        "her2",
+        "neoadjuvant",
+        "pertuzumab",
+        "t-dm1",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M0",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "CNA": "Yes",
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DM1 + pertuzumab"
+      },
+      "issues": "",
+      "indications": [
+        "her2_adjuvant_trastuzumab",
+        "her2_neoadjuvant_double_blocage"
+      ]
+    },
+    {
+      "id": "27",
+      "auteur": "MARIANNE",
+      "date": "",
+      "reference": "Perez EA, J Clin Oncol 2017 (MARIANNE), PMID 28520576",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/28520576/",
+      "objectif": "Assess non-inferiority of T-DM1 ± pertuzumab vs taxane+trastuzumab in 1L metastatic setting",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "her2",
+        "ligne-1-metastatique",
+        "ligne-ulterieure-metastatique",
+        "metastatique",
+        "pertuzumab",
+        "t-dm1",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "CTadj": "Prior allowed",
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DM1 ± pertuzumab"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_1l_pertuzumab_trastuzumab_docetaxel",
+        "her2_metastatique_ligne_ulterieure_tdm1"
+      ]
+    },
+    {
+      "id": "28",
+      "auteur": "HER2CLIMB",
+      "date": "",
+      "reference": "Murthy RK, NEJM 2020 (HER2CLIMB), PMID 31825569",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/31825569/",
+      "objectif": "Evaluate tucatinib + trastuzumab + capecitabine vs placebo on PFS/OS including brain mets",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "cerveau",
+        "her2",
+        "ligne-ulterieure-metastatique",
+        "metastatique",
+        "t-dm1",
+        "trastuzumab",
+        "tucatinib"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No",
+        "Autre intervention": "Tucatinib"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_ligne_ulterieure_tdm1",
+        "her2_metastatique_ligne_ulterieure_tucatinib"
+      ]
+    },
+    {
+      "id": "29",
+      "auteur": "DESTINY-Breast01",
+      "date": "",
+      "reference": "Modi S, NEJM 2020 (DESTINY-Breast01), PMID 32101620",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/32101620/",
+      "objectif": "Assess activity and safety of trastuzumab deruxtecan after T-DM1",
+      "type_etude": "Phase II single-arm",
+      "niveau_preuve": "B",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "her2",
+        "ligne-ulterieure-metastatique",
+        "metastatique",
+        "t-dm1",
+        "t-dxd",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DXd"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_ligne_ulterieure_tdm1",
+        "her2_metastatique_ligne_ulterieure_tdxd"
+      ]
+    },
+    {
+      "id": "30",
+      "auteur": "DESTINY-Breast03",
+      "date": "",
+      "reference": "Cortés J, NEJM 2022 (DESTINY-Breast03), PMID 35139274",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/35139274/",
+      "objectif": "Compare T-DXd vs T-DM1 in second-line HER2+ metastatic breast cancer",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "her2",
+        "ligne-ulterieure-metastatique",
+        "metastatique",
+        "t-dm1",
+        "t-dxd",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DXd"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_ligne_ulterieure_tdm1",
+        "her2_metastatique_ligne_ulterieure_tdxd"
+      ]
+    },
+    {
+      "id": "31",
+      "auteur": "DESTINY-Breast03 OS update",
+      "date": "",
+      "reference": "Cortés J, J Clin Oncol 2023 (DESTINY-Breast03 OS update), PMID 37078991",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/37078991/",
+      "objectif": "Overall survival update comparing T-DXd vs T-DM1 in 2L HER2+ metastatic breast cancer",
+      "type_etude": "Phase III randomized follow-up",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "her2",
+        "ligne-ulterieure-metastatique",
+        "metastatique",
+        "t-dm1",
+        "t-dxd",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DXd"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_ligne_ulterieure_tdm1",
+        "her2_metastatique_ligne_ulterieure_tdxd"
+      ]
+    },
+    {
+      "id": "32",
+      "auteur": "DESTINY-Breast02",
+      "date": "",
+      "reference": "Modi S, Lancet 2023 (DESTINY-Breast02), PMID 37378952",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/37378952/",
+      "objectif": "Compare T-DXd vs physician’s choice chemotherapy after T-DM1 in HER2+ metastatic disease",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "ligne-ulterieure-metastatique",
+        "metastatique",
+        "t-dm1",
+        "t-dxd"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DXd"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_ligne_ulterieure_tdm1",
+        "her2_metastatique_ligne_ulterieure_tdxd"
+      ]
+    },
+    {
+      "id": "33",
+      "auteur": "DESTINY-Breast04",
+      "date": "",
+      "reference": "Modi S, NEJM 2022 (DESTINY-Breast04), PMID 35665782",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/35665782/",
+      "objectif": "Evaluate T-DXd in HER2-low metastatic breast cancer (OS and PFS benefit)",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "her2",
+        "ligne-ulterieure-metastatique",
+        "metastatique",
+        "t-dxd"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "HER2-low"
+      },
+      "interventions": {
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DXd"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_ligne_ulterieure_tdxd"
+      ]
+    },
+    {
+      "id": "34",
+      "auteur": "SOPHIA",
+      "date": "",
+      "reference": "Rugo HS, JAMA Oncol 2021 (SOPHIA), PMID 33355619",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/33355619/",
+      "objectif": "Compare margetuximab + chemotherapy vs trastuzumab + chemotherapy after ≥2 prior anti-HER2 regimens",
+      "type_etude": "Phase III randomized",
+      "niveau_preuve": "A",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "chimiotherapie",
+        "her2",
+        "ligne-ulterieure-metastatique",
+        "margetuximab",
+        "metastatique",
+        "trastuzumab"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No",
+        "Autre intervention": "Margetuximab"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_ligne_ulterieure_margetuximab"
+      ]
+    },
+    {
+      "id": "35",
+      "auteur": "TUXEDO-1",
+      "date": "",
+      "reference": "Bartsch R, Ann Oncol 2022 (TUXEDO-1), PMID 35219661",
+      "lien": "https://pubmed.ncbi.nlm.nih.gov/35219661/",
+      "objectif": "Evaluate intracranial activity of T-DXd in HER2+ breast cancer brain metastases",
+      "type_etude": "Phase II single-arm",
+      "niveau_preuve": "B",
+      "page_senorif": "",
+      "tags": [
+        "Anti-HER2",
+        "HER2+",
+        "anti-her2",
+        "cerveau",
+        "her2",
+        "ligne-ulterieure-metastatique",
+        "metastatique",
+        "t-dxd"
+      ],
+      "criteres": {
+        "M": "M1",
+        "HER2": "Positive"
+      },
+      "interventions": {
+        "Immunothérapie": "No",
+        "Autre intervention": "T-DXd"
+      },
+      "issues": "",
+      "indications": [
+        "her2_metastatique_ligne_ulterieure_tdxd"
+      ]
+    }
+  ],
+  "note_matching": {
+    "principe": "Les études sont affichées uniquement si une indication clinique précise du résultat correspond à une indication de l'étude.",
+    "exemple": "T-DM1 post-néoadjuvant avec maladie résiduelle -> her2_post_neoadjuvant_residu_tdm1 -> KATHERINE."
+  }
+}

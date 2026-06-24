@@ -388,8 +388,152 @@
   }
 
   /* ════════════════════════════════════════════════════════════
-     ÉTUDES DE LA LITTÉRATURE
+     ÉTUDES DE LA LITTÉRATURE — MATCHING STRICT PAR INDICATION
+     Principe :
+     1. On transforme le résultat du questionnaire en indications cliniques précises.
+     2. Chaque étude possède aussi une liste "indications".
+     3. On affiche uniquement les études dont l'indication correspond exactement.
   ════════════════════════════════════════════════════════════ */
+
+  function indicationLabels() {
+    return {
+      "her2_adjuvant_trastuzumab": "HER2+ localisé — trastuzumab adjuvant",
+      "her2_adjuvant_petites_tumeurs_n0_paclitaxel_trastuzumab": "HER2+ petite tumeur N0 — paclitaxel + trastuzumab",
+      "her2_adjuvant_petites_tumeurs_n0_tdm1": "HER2+ petite tumeur N0 — T-DM1 adjuvant",
+      "her2_adjuvant_pertuzumab_trastuzumab": "HER2+ adjuvant — pertuzumab + trastuzumab",
+      "her2_post_neoadjuvant_residu_tdm1": "HER2+ post-néoadjuvant avec maladie résiduelle — T-DM1",
+      "her2_adjuvant_etendu_neratinib": "HER2+ adjuvant étendu — neratinib après trastuzumab",
+      "her2_adjuvant_duree_trastuzumab": "HER2+ adjuvant — durée du trastuzumab",
+      "her2_neoadjuvant_double_blocage": "HER2+ néoadjuvant — double blocage trastuzumab + pertuzumab",
+      "her2_metastatique_1l_pertuzumab_trastuzumab_docetaxel": "HER2+ métastatique 1re ligne — pertuzumab + trastuzumab + docétaxel",
+      "her2_metastatique_ligne_ulterieure_tdm1": "HER2+ métastatique ligne ultérieure — T-DM1",
+      "her2_metastatique_ligne_ulterieure_tdxd": "HER2+ métastatique ligne ultérieure — trastuzumab deruxtecan",
+      "her2_metastatique_ligne_ulterieure_tucatinib": "HER2+ métastatique ligne ultérieure — tucatinib",
+      "her2_metastatique_ligne_ulterieure_margetuximab": "HER2+ métastatique ligne ultérieure — margetuximab"
+    };
+  }
+
+  function addUnique(arr, value) {
+    if (arr.indexOf(value) === -1) arr.push(value);
+  }
+
+  function resultatVersIndications(traitements, profilTexte) {
+    var indications = [];
+    var all = normaliser(traitements.join(' ') + ' ' + profilTexte);
+
+    var isHER2 = all.indexOf('her2') !== -1 || all.indexOf('anti her2') !== -1 ||
+                 all.indexOf('trastuzumab') !== -1 || all.indexOf('pertuzumab') !== -1 ||
+                 all.indexOf('t dm1') !== -1 || all.indexOf('tdm1') !== -1;
+
+    if (!isHER2) return indications;
+
+    var isMeta = all.indexOf('metastatique') !== -1 || all.indexOf('metastase') !== -1;
+    var isFirstLineMeta = isMeta && (
+      all.indexOf('premier traitement') !== -1 ||
+      all.indexOf('1l') !== -1 ||
+      all.indexOf('1ere ligne') !== -1 ||
+      all.indexOf('premiere ligne') !== -1
+    );
+    var isLaterLineMeta = isMeta && (
+      all.indexOf('progression') !== -1 ||
+      all.indexOf('ligne ulterieure') !== -1 ||
+      all.indexOf('apres progression') !== -1 ||
+      !isFirstLineMeta
+    );
+
+    var isNeo = all.indexOf('neoadjuvant') !== -1 ||
+                all.indexOf('avant la chirurgie') !== -1 ||
+                all.indexOf('traitement avant chirurgie') !== -1;
+
+    var hasResidual = all.indexOf('rcb i') !== -1 ||
+                      all.indexOf('rcb ii') !== -1 ||
+                      all.indexOf('rcb iii') !== -1 ||
+                      all.indexOf('residu') !== -1 ||
+                      all.indexOf('maladie residuelle') !== -1;
+
+    var hasPCR = all.indexOf('rcb 0') !== -1 || all.indexOf('pcr') !== -1;
+
+    var hasTDm1 = all.indexOf('t dm1') !== -1 || all.indexOf('tdm1') !== -1;
+    var hasTDxd = all.indexOf('t dxd') !== -1 || all.indexOf('deruxtecan') !== -1;
+    var hasTucatinib = all.indexOf('tucatinib') !== -1;
+    var hasMargetuximab = all.indexOf('margetuximab') !== -1;
+    var hasPertuzumab = all.indexOf('pertuzumab') !== -1;
+    var hasTrastuzumab = all.indexOf('trastuzumab') !== -1;
+    var hasPaclitaxel = all.indexOf('paclitaxel') !== -1;
+    var hasNeratinib = all.indexOf('neratinib') !== -1;
+
+    if (isMeta) {
+      if (isFirstLineMeta && (hasPertuzumab || hasTrastuzumab || all.indexOf('anti her2 1l') !== -1)) {
+        addUnique(indications, "her2_metastatique_1l_pertuzumab_trastuzumab_docetaxel");
+      }
+      if (isLaterLineMeta && hasTDm1) addUnique(indications, "her2_metastatique_ligne_ulterieure_tdm1");
+      if (isLaterLineMeta && hasTDxd) addUnique(indications, "her2_metastatique_ligne_ulterieure_tdxd");
+      if (isLaterLineMeta && hasTucatinib) addUnique(indications, "her2_metastatique_ligne_ulterieure_tucatinib");
+      if (isLaterLineMeta && hasMargetuximab) addUnique(indications, "her2_metastatique_ligne_ulterieure_margetuximab");
+
+      // Si le résultat dit seulement "anti-HER2 ligne ultérieure", on évite de choisir un seul médicament :
+      // on affiche les familles principales de preuves ligne ultérieure.
+      if (isLaterLineMeta && all.indexOf('anti her2 ligne ulterieure') !== -1) {
+        addUnique(indications, "her2_metastatique_ligne_ulterieure_tdm1");
+        addUnique(indications, "her2_metastatique_ligne_ulterieure_tdxd");
+        addUnique(indications, "her2_metastatique_ligne_ulterieure_tucatinib");
+      }
+
+      return indications;
+    }
+
+    // Situation post-néoadjuvante HER2+.
+    if ((isNeo || hasResidual || hasPCR) && hasTDm1) {
+      addUnique(indications, "her2_post_neoadjuvant_residu_tdm1");
+      return indications;
+    }
+
+    if ((isNeo || hasPCR) && hasPCR && hasTrastuzumab) {
+      addUnique(indications, "her2_adjuvant_trastuzumab");
+      if (hasPertuzumab) addUnique(indications, "her2_adjuvant_pertuzumab_trastuzumab");
+      return indications;
+    }
+
+    // Néoadjuvant double blocage.
+    if (isNeo && hasPertuzumab && hasTrastuzumab) {
+      addUnique(indications, "her2_neoadjuvant_double_blocage");
+      return indications;
+    }
+
+    // Petite tumeur N0 avec paclitaxel-trastuzumab.
+    if (hasPaclitaxel && hasTrastuzumab) {
+      addUnique(indications, "her2_adjuvant_petites_tumeurs_n0_paclitaxel_trastuzumab");
+      return indications;
+    }
+
+    if (hasNeratinib) {
+      addUnique(indications, "her2_adjuvant_etendu_neratinib");
+      return indications;
+    }
+
+    // Adjuvant HER2+ standard.
+    if (hasPertuzumab && hasTrastuzumab) {
+      addUnique(indications, "her2_adjuvant_pertuzumab_trastuzumab");
+      addUnique(indications, "her2_adjuvant_trastuzumab");
+      return indications;
+    }
+
+    if (hasTrastuzumab || all.indexOf('anti her2') !== -1) {
+      addUnique(indications, "her2_adjuvant_trastuzumab");
+      return indications;
+    }
+
+    return indications;
+  }
+
+  function etudeCorrespondAuxIndications(etude, indicationsResultat) {
+    var inds = etude.indications || [];
+    var matched = [];
+    inds.forEach(function(ind) {
+      if (indicationsResultat.indexOf(ind) !== -1) matched.push(ind);
+    });
+    return matched;
+  }
 
   function renderEtudes(traitementsRecommandes, profilTexte) {
     var section = $('etudes-section');
@@ -406,26 +550,44 @@
       return;
     }
 
-    var scored = etudes.map(function (e) {
-      var match = scoreEtudePourResultat(e, traitementsRecommandes, profilTexte);
-      return { etude: e, score: match.valeur, tags: match.tags };
-    }).filter(function (x) {
-      return x.score > 0;
-    }).sort(function (a, b) {
-      if (b.score !== a.score) return b.score - a.score;
+    var indicationsResultat = resultatVersIndications(traitementsRecommandes, profilTexte);
+    var labels = indicationLabels();
+
+    if (!indicationsResultat.length) {
+      var p0 = document.createElement('p');
+      p0.style.cssText = 'color:#636e72;font-size:13px;margin-top:12px;';
+      p0.textContent = 'Aucune indication d’étude codée pour ce résultat. Il faut ajouter des études ou une règle de correspondance pour ce traitement.';
+      section.appendChild(p0);
+      return;
+    }
+
+    var intro = document.createElement('p');
+    intro.style.cssText = 'color:#636e72;font-size:13px;margin:8px 0 16px;';
+    intro.innerHTML = '<strong>Indication utilisée pour sélectionner les études :</strong> ' +
+      indicationsResultat.map(function(ind){ return labels[ind] || ind; }).join(' · ');
+    section.appendChild(intro);
+
+    var matched = etudes.map(function(e) {
+      return {
+        etude: e,
+        indications: etudeCorrespondAuxIndications(e, indicationsResultat)
+      };
+    }).filter(function(x) {
+      return x.indications.length > 0;
+    }).sort(function(a, b) {
       return niveauRank(b.etude.niveau_preuve) - niveauRank(a.etude.niveau_preuve);
     });
 
-    if (!scored.length) {
+    if (!matched.length) {
       var p = document.createElement('p');
       p.style.cssText = 'color:#636e72;font-size:13px;margin-top:12px;';
-      p.textContent = 'Aucune étude de la base ne correspond directement aux traitements recommandés pour ce résultat.';
+      p.textContent = 'Aucune étude de la base ne correspond à cette indication précise.';
       section.appendChild(p);
       return;
     }
 
-    scored.slice(0, 12).forEach(function (item) {
-      section.appendChild(creerCarteEtude(item.etude, item.score, item.tags));
+    matched.forEach(function(item) {
+      section.appendChild(creerCarteEtude(item.etude, item.indications));
     });
   }
 
@@ -438,7 +600,7 @@
     return 0;
   }
 
-  function creerCarteEtude(etude, score, tags) {
+  function creerCarteEtude(etude, indications) {
     var card = document.createElement('div');
     card.style.cssText = 'background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:20px;margin-bottom:14px;';
 
@@ -447,6 +609,7 @@
 
     var niveau = etude.niveau_preuve || 'Non précisé';
     var lien = etude.lien || '';
+    var labels = indicationLabels();
 
     var html =
       '<div style="display:flex;justify-content:space-between;gap:16px;align-items:flex-start;">' +
@@ -454,9 +617,8 @@
           '<h4 style="margin:0 0 8px 0;font-size:16px;color:#1a1a1a;">' + escapeHtml(titre) + '</h4>' +
           '<div style="font-size:13px;color:#636e72;margin-bottom:8px;">' +
             '<strong>Niveau de preuve :</strong> ' + escapeHtml(niveau) +
-            (score ? ' · <strong>Correspondance :</strong> ' + score + '%' : '') +
           '</div>' +
-          (tags && tags.length ? '<div style="font-size:12px;color:#636e72;margin-bottom:10px;">Tags associés : ' + escapeHtml(tags.join(', ')) + '</div>' : '') +
+          (indications && indications.length ? '<div style="font-size:12px;color:#636e72;margin-bottom:10px;">Correspond à : ' + escapeHtml(indications.map(function(ind){ return labels[ind] || ind; }).join(', ')) + '</div>' : '') +
           (etude.objectif ? '<div style="font-size:13px;color:#374151;margin:10px 0;">' + escapeHtml(etude.objectif) + '</div>' : '') +
           (lien ? '<a href="' + escapeAttr(lien) + '" target="_blank" rel="noopener" style="font-size:13px;color:#2563eb;text-decoration:none;font-weight:600;">Voir l’étude →</a>' : '') +
         '</div>' +
